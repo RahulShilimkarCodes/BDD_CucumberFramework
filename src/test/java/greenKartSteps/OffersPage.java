@@ -16,16 +16,6 @@ import io.cucumber.java.en.When;
 import pageObjects.OffersPageObject;
 import testUtils.TestSetup;
 
-/*
- * 
- * Given User is on GreenKart Landing Page
-When User searches for product with ShortName as "Tom" on HomePage
-And User Extracts the actual name of product
-Then User searches for same product using same ShortName as "Tom" on OffersPage
-And checks if product exists under Offers Page too
-
- */
-
 public class OffersPage {
 	
 	public String offerPageProductName;

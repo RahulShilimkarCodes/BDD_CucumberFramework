@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 12 12:43:50 IST 2026</td>
+<td>Started on:</td><td>Fri Jun 12 19:55:39 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14588 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25873 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,63 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
-<td><div><pre>java.lang.AssertionError: expected [No data] but found [Brocolli]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:59)
-	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
-</pre></div><a href='#' onClick='toggleBox("stack-trace825545820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace825545820'><pre>java.lang.AssertionError: expected [No data] but found [Brocolli]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:59)
-	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
-</pre></div></td>
-<td>13</td>
-<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
-<tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
-<td><div><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:59)
-	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
-</pre></div><a href='#' onClick='toggleBox("stack-trace603875044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace603875044'><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:59)
-	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
-</pre></div></td>
-<td>13</td>
-<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -133,14 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
+<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
 <td></td>
-<td>11</td>
+<td>25</td>
 <td>testRunners.CucumberTestRunner@61322f9d</td></tr>
 <tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
+<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
 <td></td>
-<td>10</td>
+<td>22</td>
+<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
+<tr>
+<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
+<td></td>
+<td>23</td>
 <td>testRunners.CucumberTestRunner@61322f9d</td></tr>
 </table><p>
 </body>

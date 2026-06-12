@@ -18,6 +18,10 @@ public class LandingPageObject {
 	By searchItem = By.xpath("//button[@type='submit']"); 
 	By productName = By.xpath("//h4[contains(@class,'product-name')]");
 	By offersPage = By.xpath("//a[contains(@href,'/offers')]");
+	By incrementQuantity = By.xpath("//a[text()='+']");
+	By addToCart = By.xpath("//div[@class='product-action']/child::button");
+	By cartButton = By.xpath("//a[@class='cart-icon']");
+	By proceedToCart = By.xpath("//button[text()='PROCEED TO CHECKOUT']");
 	
 	public void enterItemName(String product)
 	{
@@ -43,6 +47,25 @@ public class LandingPageObject {
 	public void loadGreenKart()
 	{
 		driver.get(ConfigReaderManager.getProperties("base_url"));
+	}
+	
+	public void selectQuantity(int quantity)
+	{
+		for(int i = 1 ; i < quantity;i++)
+		{
+			driver.findElement(addToCart).click();
+		}	
+	}
+	
+	public void addToCart()
+	{
+		driver.findElement(addToCart).click();
+	}
+	
+	public void goToCart()
+	{
+		driver.findElement(cartButton).click();
+		driver.findElement(proceedToCart).click();
 	}
 
 }

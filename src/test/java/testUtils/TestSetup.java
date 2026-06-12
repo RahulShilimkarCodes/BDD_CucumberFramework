@@ -19,7 +19,8 @@ public class TestSetup {
 	
 	public TestSetup()
 	{
-		webDriverManager = new WebDriverManager();		
+		webDriverManager = new WebDriverManager();
+		
 	}
 	
 	public void initializePageObjects()

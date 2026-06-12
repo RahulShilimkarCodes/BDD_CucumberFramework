@@ -17,16 +17,6 @@ import pageObjects.LandingPageObject;
 import testUtils.PageObjectManager;
 import testUtils.TestSetup;
 
-/*
- * 
- * Given User is on GreenKart Landing Page
-When User searches for product with ShortName as "Tom" on HomePage
-And User Extracts the actual name of product
-Then User searches for same product using same ShortName as "Tom" on OffersPage
-And checks if product exists under Offers Page too
-
- */
-
 public class LandingPage {
 	
 	public String offerPageProductName;
@@ -78,5 +68,19 @@ public class LandingPage {
 	{
 //		LandingPageObject landingPageObject = new LandingPageObject(setUp.driver);
 		landingPageObject.clickOnOffersPage();
+	}
+	
+	
+	@When("^User adds (.+) quantity for the product$")
+	public void selectQuantity(int quantity)
+	{
+		landingPageObject.selectQuantity(quantity);
+	}
+	
+	@When("user proceeds to checkout page")
+	public void addToCart()
+	{
+		landingPageObject.addToCart();
+		landingPageObject.goToCart();
 	}
 }

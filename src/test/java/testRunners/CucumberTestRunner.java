@@ -6,12 +6,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features="classpath:FeatureFile/searchProduct.feature",
+		features="classpath:FeatureFile/placeOrder.feature",
 		glue="greenKartSteps",
 		dryRun=false,
 		monochrome=true,
 		plugin= {"pretty", "html:target/greenkart-cucumber.html","json:target/greenkart-cucumber.json"},
-		tags="@DataDriven"
+		tags="@EndToEnd"
 		)
 
 

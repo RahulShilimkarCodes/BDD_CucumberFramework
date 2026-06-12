@@ -2,6 +2,7 @@ package testUtils;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.CheckoutPageObject;
 import pageObjects.LandingPageObject;
 import pageObjects.OffersPageObject;
 
@@ -18,6 +19,7 @@ public class PageObjectManager {
 	
 	public LandingPageObject landingPageObject;
 	public OffersPageObject offersPageObject;
+	public CheckoutPageObject checkoutPageObject;
 	
 	public LandingPageObject getLandingPageObject()
 	{
@@ -29,6 +31,12 @@ public class PageObjectManager {
 	{
 		offersPageObject = new OffersPageObject(driver);
 		return offersPageObject;
+	}
+	
+	public CheckoutPageObject getCheckoutPageObject()
+	{
+		checkoutPageObject = new CheckoutPageObject(driver);
+		return checkoutPageObject;
 	}
 
 }
