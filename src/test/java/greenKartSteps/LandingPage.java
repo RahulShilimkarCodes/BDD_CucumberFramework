@@ -53,12 +53,7 @@ public class LandingPage {
 	public void extractName()
 	{
 //		LandingPageObject landingPageObject = new LandingPageObject(setUp.driver);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		setUp.landingPageProductName = landingPageObject.getProductName();	
 	}
 	

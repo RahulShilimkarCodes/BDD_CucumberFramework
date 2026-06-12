@@ -24,13 +24,6 @@ public class CheckoutPage {
 	@When("User validates the item in checkout page")
 	public void validateProductName()
 	{
-		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		checkoutPageObject = testSetup.pageObjectManager.getCheckoutPageObject();
 		checkOutPageProductName = checkoutPageObject.getProductName();
 		Assert.assertEquals(checkOutPageProductName, testSetup.landingPageProductName);
@@ -46,12 +39,7 @@ public class CheckoutPage {
 	@Then("user verifies successful promoCode application")
 	public void verifySuccessfulPromo()
 	{
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		promoCodeMessage = checkoutPageObject.getPromoCodeMessage();
 		Assert.assertEquals("Code applied ..!",promoCodeMessage);
 	}

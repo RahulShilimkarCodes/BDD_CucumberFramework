@@ -10,10 +10,12 @@ import pageObjects.OffersPageObject;
 public class PageObjectManager {
 	
 	public WebDriver driver;
+	public TestSetup setUp;
 	
-	public PageObjectManager(WebDriver driver)
+	public PageObjectManager(WebDriver driver, TestSetup setUp)
 	{
 		this.driver = driver;
+		this.setUp = setUp;
 	}
 	
 	
@@ -23,19 +25,19 @@ public class PageObjectManager {
 	
 	public LandingPageObject getLandingPageObject()
 	{
-		landingPageObject = new LandingPageObject(driver);
+		landingPageObject = new LandingPageObject(driver,setUp);
 		return landingPageObject;
 	}
 	
 	public OffersPageObject getOffersPageObject()
 	{
-		offersPageObject = new OffersPageObject(driver);
+		offersPageObject = new OffersPageObject(driver,setUp);
 		return offersPageObject;
 	}
 	
 	public CheckoutPageObject getCheckoutPageObject()
 	{
-		checkoutPageObject = new CheckoutPageObject(driver);
+		checkoutPageObject = new CheckoutPageObject(driver,setUp);
 		return checkoutPageObject;
 	}
 

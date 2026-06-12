@@ -19,6 +19,7 @@ public class Hooks {
 	public void setUpDriver()
 	{
 		testSetup.webDriverManager.initDriver();			//since constructor does new TestSetup() in background, we can all methods as well...
+		testSetup.initializeWaits();
 		testSetup.initializePageObjects();
 	}
 	

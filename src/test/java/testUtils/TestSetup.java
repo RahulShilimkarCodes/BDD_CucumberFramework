@@ -16,6 +16,7 @@ public class TestSetup {
 	public WebDriverManager webDriverManager;
 	public SwitchWindow window;
 	public Hooks hooks;
+	public WaitUtility waitUtility;
 	
 	public TestSetup()
 	{
@@ -25,8 +26,12 @@ public class TestSetup {
 	
 	public void initializePageObjects()
 	{
-		pageObjectManager = new PageObjectManager(WebDriverManager.getDriver());
+		pageObjectManager = new PageObjectManager(WebDriverManager.getDriver(),this);
 		window = new SwitchWindow(WebDriverManager.getDriver());
+	}
+	public void initializeWaits()
+	{
+		waitUtility = new WaitUtility(WebDriverManager.getDriver());
 	}
 	
 
