@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 12 20:52:55 IST 2026</td>
+<td>Started on:</td><td>Sat Jun 13 00:30:14 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16204 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19653 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
-<td></td>
-<td>14</td>
-<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
+<td title='testRunners.FailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.FailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
+<td><div><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:49)
+	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1318139476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318139476'><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:49)
+	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
+</pre></div></td>
+<td>17</td>
+<td>testRunners.FailedTestRunner@26b3fd41</td></tr>
 <tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
-<td></td>
-<td>15</td>
-<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
-<tr>
-<td title='testRunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End product buying script", "Placing the order of the product"</td>
-<td></td>
-<td>14</td>
-<td>testRunners.CucumberTestRunner@61322f9d</td></tr>
+<td title='testRunners.FailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.FailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for product on both Home Page and Offer Page", "Search and place the order on Greenkart application"</td>
+<td><div><pre>java.lang.AssertionError: expected [No data] but found [Brocolli]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:49)
+	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace136920001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace136920001'><pre>java.lang.AssertionError: expected [No data] but found [Brocolli]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at greenKartSteps.OffersPage.checkOffer(OffersPage.java:49)
+	at ✽.checks if product exists under Offers Page too(classpath:FeatureFile/searchProduct.feature:23)
+</pre></div></td>
+<td>18</td>
+<td>testRunners.FailedTestRunner@26b3fd41</td></tr>
 </table><p>
 </body>
 </html>
