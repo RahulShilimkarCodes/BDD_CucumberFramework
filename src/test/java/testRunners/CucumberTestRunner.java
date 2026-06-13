@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin= {"pretty", "html:target/greenkart-cucumber.html","json:target/greenkart-cucumber.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed_scenarios.txt"},
-		tags="@DataDriven"		
+		tags="@DataDriven or @EndToEnd"		
 		)
 
 

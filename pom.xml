@@ -77,4 +77,40 @@
 		</dependency>
 
 	</dependencies>
+	
+	
+	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <includes>
+                        <include>**/testRunners/*TestRunner.java</include>
+                    </includes>
+                    <!-- mvn test -Dtest=CucumberTestRunner  - used to run test....-->
+                    <properties>
+                        <property>
+                            <name>dataproviderthreadcount</name>
+                            <value>4</value> 
+                        </property>
+                    </properties>
+                    
+                    <testFailureIgnore>false</testFailureIgnore>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

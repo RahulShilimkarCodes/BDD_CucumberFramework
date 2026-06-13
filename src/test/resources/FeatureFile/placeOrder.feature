@@ -14,7 +14,7 @@ Feature: Placing the order of the product
     And User selects country as <Country>
 
     Examples: 
-      | ProductName | quantity | Country       |  |
-      | Strawberry  |        3 | India         |  |
-      | Beetroot    |        2 | Australia     |  |
-      | Brocolli    |        5 | United States |  |
+      | ProductName | quantity | Country       |  
+      | Strawberry  |        3 | India         |  
+      | Beetroot    |        2 | Australia     |  
+      | Brocolli    |        5 | United States |  

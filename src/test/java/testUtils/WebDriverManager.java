@@ -12,18 +12,19 @@ public class WebDriverManager {
 
 	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	private static ThreadLocal<WebDriverWait> tlWait = new ThreadLocal<>();
-	public String browser;
 
 	public WebDriver initDriver() {
 		if (tlDriver.get() == null) {
 			synchronized (WebDriverManager.class) {
 				if (tlDriver.get() == null) {
-					String browser = ConfigReaderManager.getProperties("browser");
-					switch (browser.toLowerCase()) {
+					String browser_properties= ConfigReaderManager.getProperties("browser");
+					String browser_maven = System.getProperty("browser", browser_properties);					
+					
+					switch (browser_maven.toLowerCase()) {
 					case "chrome" -> tlDriver.set(new ChromeDriver());
 					case "edge" -> tlDriver.set(new EdgeDriver());
 					case "firefox" -> tlDriver.set(new FirefoxDriver());
-					default -> throw new IllegalArgumentException("Incorrect browser passed: " + browser);
+					default -> throw new IllegalArgumentException("Incorrect browser passed: " + browser_properties);
 					}
 				}
 			}

@@ -1,0 +1,6 @@
+To run the test, we use below from Command Line:- mvn test -Dtest=CucumberTestRunner
+
+To run the test, using the filters.. :- mvn test "-Dcucumber.filter.tags=@SingleRun" or mvn test -Dcucumber.filter.tags="@SingleRun"
+
+To run the test, using the filters.. :- mvn test -Dcucumber.features = "classpath:FeatureFile/placeOrder.feature"
+Note:- while running above, do check the tags in CucumberOptions class..

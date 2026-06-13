@@ -58,7 +58,7 @@ public class Hooks {
 
 		// converting File screenshot to Byte to, use to attach to extent reports..
 		byte[] screenshotBytes = FileUtils.readFileToByteArray(screenshot);
-		scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");	    
+		scenario.attach(screenshotBytes, "image/png", "Step Screenshot");	    
 	}
 	
 	@After
