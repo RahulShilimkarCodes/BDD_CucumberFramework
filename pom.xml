@@ -92,6 +92,7 @@
                 </configuration>
             </plugin>
 
+<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -100,7 +101,6 @@
                     <includes>
                         <include>**/testRunners/*TestRunner.java</include>
                     </includes>
-                    <!-- mvn test -Dtest=CucumberTestRunner  - used to run test....-->
                     <properties>
                         <property>
                             <name>dataproviderthreadcount</name>
@@ -111,6 +111,7 @@
                     <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
+            -->
         </plugins>
     </build>
 </project>

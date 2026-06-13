@@ -5,8 +5,8 @@ C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\greenKartSteps
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\pageObjects\CheckoutPageObject.java
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\pageObjects\LandingPageObject.java
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\pageObjects\OffersPageObject.java
-C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testRunners\CucumberTestRunner.java
-C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testRunners\FailedTestRunner.java
+C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testRunners\CucumberRunnerTest.java
+C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testRunners\FailedRunnerTest.java
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testUtils\ConfigReaderManager.java
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testUtils\PageObjectManager.java
 C:\InterviewSection\FileHandlings\CucumberFramework\src\test\java\testUtils\SwitchWindow.java
